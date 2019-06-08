@@ -64,10 +64,7 @@ node_modules/
 # dotenv environment variables file
 .env
 
-# Custom .gitignore files
-# node_modules
-node_modules/
-
+# Custom .gitignore
 # Pacel
 .cache/
 devserver/
