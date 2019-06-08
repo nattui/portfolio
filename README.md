@@ -14,6 +14,9 @@ Demonstrated front-end web development with pixel perfect CSS. Optimize for Inte
 **Web Hosting**
 * [Firebase](https://firebase.google.com/)
 
+**Web Auditing**
+* [Lighthouse](https://web.dev/measure) // [Scored 100 on all metrics](https://i.imgur.com/nfGrByG.png)
+
 **Front-end**
 * HTML
   * [PostHTML](https://github.com/posthtml/posthtml) // Transforming HTML
