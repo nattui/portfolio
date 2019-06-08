@@ -1,0 +1,112 @@
+// =========================================
+//  Navigation Bar
+// =========================================
+
+
+// Imports ------------------------------- /
+@import 'variables';
+
+
+// Variables ----------------------------- /
+$debug-color: rgba(185, 193, 66, 0.25);
+
+
+// Base: Navigation Bar ------------------ /
+#navbar {
+  background-color: white;
+  box-shadow: 0 0px 6px 0 rgba(0,0,0,0.12);
+  position: fixed;
+    top: 0px;
+  z-index: 100;
+}
+
+#navbar-main {
+  display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  height: 100vh;
+  width: $navbar-width-large;
+
+  a {
+    display: flex;
+      align-items: center;
+      justify-content: center;
+    height: $navbar-width-large;
+    width: 100%;
+
+    &:hover {
+      background-color: darken(white, 10%);
+    }
+  }
+
+  img {
+    height: 48px;
+    width: 48px;
+  }
+
+  button {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 26px;
+    height: $navbar-width-large;
+    outline: none;    // Google Chrome
+    padding: 0px;
+    user-select: none;
+    width: 100%;
+
+    &:hover {
+      background-color: darken(white, 10%);
+    }
+  }
+}
+
+#navbar-info {
+  text-align: center;
+  transform: rotate(-90deg);
+  width: 200px;
+
+  h2 {
+    font-size: 14px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+
+  span {
+    font-size: 10px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+}
+
+
+// Media Queries ------------------------- /
+@media only screen and (max-width: $breakpoint-medium) {
+  // Medium: width is below 990px pixels
+  #navbar {
+    width: 100%;
+  }
+
+  #navbar-main {
+    height: $navbar-width-medium;
+    width: inherit;
+    flex-direction: row;
+
+    a {
+      height: 100%;
+      width: $navbar-width-medium;
+    }
+
+    button {
+      height: 100%;
+      width: $navbar-width-medium;
+    }
+  }
+
+  #navbar-info {
+    transform: rotate(0deg);
+  }
+}

@@ -1,0 +1,132 @@
+// =========================================
+//  Main
+// =========================================
+
+
+// Imports ------------------------------- /
+@import 'variables';
+
+
+// Variables ----------------------------- /
+$debug-color: rgba(193, 66, 66, 0.33);
+$hero-color-primary: #000000;
+$hero-color-accent: #B30000;
+$hero-color-secondary: #555555;
+
+// Base: Main ---------------------------- /
+main {
+  display: flex;
+    flex-direction: column;
+  padding-left: $navbar-width-large;
+}
+
+#hero {
+  display: flex;
+  height: 100vh;
+}
+
+#hero-content, #hero-image {
+  height: inherit;
+  width: 50vw;
+}
+
+#hero-image {
+  background: url("https://images.unsplash.com/photo-1494256997604-768d1f608cac?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80");
+    background-position: center;
+    background-size: cover;
+}
+
+#hero-content {
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  padding: 0 7%;
+  overflow-x: hidden;
+}
+
+// Hero Content -------------------------- /
+#hero-contact {
+  display: flex;
+  font-size: 10px;
+  margin: 40px 0 20px 0;
+  text-transform: uppercase;
+
+  p {
+    color: $hero-color-secondary;
+    margin-right: 10px;
+  }
+
+  a {
+    color: $hero-color-primary;
+    border-bottom: 1px solid $hero-color-accent;
+    text-decoration: none;
+  }
+}
+
+section {
+  h1 {
+    font-size: 44px;
+    font-weight: bolder;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-size: 14px;
+    margin-bottom: 22px;
+    line-height: 1.5;
+  }
+
+  img {
+    height: 54px;
+    max-width: none;
+    width: 153px;
+  }
+}
+
+#hero-location {
+  display: flex;
+  margin: 20px 0 40px 0;
+
+  img {
+    height: 32px;
+    margin-right: 10px;
+    width: 32px;
+  }
+
+  p {
+    color: $hero-color-secondary;
+  }
+
+  .uppercase {
+    color: $hero-color-accent;
+  }
+}
+
+
+// About Section ------------------------- /
+#about {
+  @include debug(rgba(193, 66, 193, 0.5));
+  height: 400px;
+}
+
+
+// Media Queries ------------------------- /
+@media only screen and (max-width: $breakpoint-medium) {
+  // Medium: width is below 990px pixels
+  main {
+    padding-left: 0;
+    padding-top: $navbar-width-medium;
+  }
+
+  #hero {
+    display: flex;
+      flex-direction: column;
+    height: auto;
+
+    #hero-content, #hero-image {
+      min-height: 550px;
+      width: 100%;
+    }
+  }
+}
