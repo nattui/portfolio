@@ -1,4 +1,4 @@
-# Nhat Nguyen's Portfolio
+# [Nhat Nguyen's Portfolio](https://nhatnguyen.me) &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/nguyen-nhat/portfolio/pulls)
 
 ![Portfolio Banner](https://i.imgur.com/4AiNX4P.jpg)
 
@@ -9,7 +9,7 @@ Demonstrated front-end web development with pixel perfect CSS. Optimize for Inte
 
 ### Technologies
 
-**Web application bundler**
+**Web Application Bundler**
 * [Parcel](https://parceljs.org/)
 
 **Web Hosting**
@@ -20,7 +20,7 @@ Demonstrated front-end web development with pixel perfect CSS. Optimize for Inte
   * [PostHTML](https://github.com/posthtml/posthtml) // Transforming HTML
 * CSS
   * [Sass](https://sass-lang.com/) // CSS preprocessor
-  * [PostCSS](https://postcss.org/) // Transforming HTML
+  * [PostCSS](https://postcss.org/) // Transforming CSS
 * JavaScript
 
 ## Installing the project
