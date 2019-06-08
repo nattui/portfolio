@@ -16,6 +16,7 @@
   "author": "Nhat Nguyen",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^9.6.0",
     "parcel-bundler": "^1.12.3",
     "parcel-plugin-inliner": "^1.0.10",
     "sass": "^1.21.0"
