@@ -4,8 +4,7 @@
 
 Demonstrated front-end web development with pixel perfect CSS. Optimize for Internet Explorer and mobile too
 
-
-## About
+## About <img align="right" width="200" height="200" title="Nhat Nguyen's Logo" src="./development/resources/logo.png">
 
 ### Technologies
 
@@ -23,19 +22,21 @@ Demonstrated front-end web development with pixel perfect CSS. Optimize for Inte
   * [PostCSS](https://postcss.org/) // Transforming CSS
 * JavaScript
 
-## Installing the project
+## Getting Started
+
+### Installing the project
 
 ```
 npm install
 ```
 
-## Running the project
+### Running the project
 
 ```
 npm run dev
 ```
 
-## Building the project
+### Building the project
 
 ```
 npm run build
