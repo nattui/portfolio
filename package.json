@@ -2,19 +2,31 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "🔥 Nhat Nguyen's Portfolio Website - Demonstrated front-end web development with pixel perfect CSS. Optimize for Internet Explorer and mobile too",
-  "main": "development/index.html",
-  "scripts": {
-    "dev": "parcel development/index.html -d devserver --open",
-    "build:html": "parcel build development/index.html -d production/ --no-source-maps --public-url .",
-    "build": "npm run build:html"
-  },
+  "keywords": [
+    "web-development"
+  ],
+  "author": "Nhat Nguyen",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nguyen-nhat/portfolio.git"
   },
-  "keywords": [],
-  "author": "Nhat Nguyen",
-  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nguyen-nhat/portfolio/issues"
+  },
+  "homepage": "https://github.com/nguyen-nhat/portfolio#readme",
+  "main": "development/index.html",
+  "scripts": {
+    "dev": "parcel development/index.html -d devserver --open",
+    "react": "parcel development/react.html -d devserver --open",
+    "build:html": "parcel build development/index.html -d production/ --no-source-maps --public-url .",
+    "build": "npm run build:html"
+  },
+  "dependencies": {
+    "header": "^0.1.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
   "devDependencies": {
     "autoprefixer": "^9.6.0",
     "parcel-bundler": "latest",
@@ -28,9 +40,5 @@
         "grid": true
       }
     }
-  },
-  "bugs": {
-    "url": "https://github.com/nguyen-nhat/portfolio/issues"
-  },
-  "homepage": "https://github.com/nguyen-nhat/portfolio#readme"
+  }
 }
