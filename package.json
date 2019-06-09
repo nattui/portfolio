@@ -18,7 +18,6 @@
   "main": "development/index.html",
   "scripts": {
     "dev": "parcel development/index.html -d devserver --open",
-    "react": "parcel development/react.html -d devserver --open",
     "build:html": "parcel build development/index.html -d production/ --no-source-maps --public-url .",
     "build": "npm run build:html"
   },
