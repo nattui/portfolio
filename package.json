@@ -4,7 +4,7 @@
   "description": "🔥 Nhat Nguyen's Portfolio Website - Demonstrated front-end web development with pixel perfect CSS. Optimize for Internet Explorer and mobile too",
   "main": "development/index.html",
   "scripts": {
-    "dev": "parcel development/index.html -d devserver --open",
+    "dev": "parcel development/index.html -d devserver/ --global index --open",
     "build:html": "parcel build development/index.html -d production/ --no-source-maps --public-url .",
     "build": "npm run build:html"
   },
