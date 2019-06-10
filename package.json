@@ -5,7 +5,7 @@
   "main": "development/index.html",
   "scripts": {
     "dev": "parcel development/index.html -d devserver/ --global index --open",
-    "build:html": "parcel build development/index.html -d production/ --no-source-maps --public-url .",
+    "build:html": "parcel build development/index.html -d production/ --global index --no-source-maps --public-url .",
     "build": "npm run build:html"
   },
   "repository": {
