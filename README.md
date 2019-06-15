@@ -8,11 +8,11 @@ Demonstrated front-end web development with pixel perfect CSS. Optimize for Inte
 
 ### Technologies
 
-**Web Application Bundler**
-* [Parcel](https://parceljs.org/)
+**Web Bundler**
+* [Parcel](https://parceljs.org)
 
 **Web Hosting**
-* [Firebase](https://firebase.google.com/)
+* [Firebase](https://firebase.google.com)
 
 **Web Auditing**
 * [Lighthouse](https://web.dev/measure) // [Scored 100 on all metrics](https://i.imgur.com/nfGrByG.png)
@@ -21,9 +21,10 @@ Demonstrated front-end web development with pixel perfect CSS. Optimize for Inte
 * HTML
   * [PostHTML](https://github.com/posthtml/posthtml) // Transforming HTML
 * CSS
-  * [Sass](https://sass-lang.com/) // CSS preprocessor
-  * [PostCSS](https://postcss.org/) // Transforming CSS
+  * [Sass](https://sass-lang.com) // CSS preprocessor
+  * [PostCSS](https://postcss.org) // Transforming CSS
 * JavaScript
+  * [React](https://reactjs.org) // Only on React branch
 
 ## Getting Started
 
