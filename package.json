@@ -16,10 +16,10 @@
   "author": "Nhat Nguyen",
   "license": "MIT",
   "devDependencies": {
-    "autoprefixer": "^9.6.0",
+    "autoprefixer": "^9.6.1",
     "parcel-bundler": "latest",
     "parcel-plugin-inliner": "^1.0.10",
-    "sass": "^1.21.0"
+    "sass": "^1.22.7"
   },
   "postcss": {
     "modules": false,
