@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "parcel development/index.html -d devserver/ --global index --open",
     "build": "parcel build development/index.html -d production/ --global index --no-source-maps --public-url .",
-    "update:dependencies": "npx npm-check-updates -u && npm i"
+    "update:dependencies": "npx npm-check-updates -u && npm i",
+    "remove:dependencies": "rm -R node_modules"
   },
   "repository": {
     "type": "git",
