@@ -5,8 +5,8 @@
   "main": "development/index.html",
   "scripts": {
     "dev": "parcel development/index.html -d devserver/ --global index --open",
-    "build:html": "parcel build development/index.html -d production/ --global index --no-source-maps --public-url .",
-    "build": "npm run build:html"
+    "build": "parcel build development/index.html -d production/ --global index --no-source-maps --public-url .",
+    "update:dependencies": "npx npm-check-updates -u && npm i"
   },
   "repository": {
     "type": "git",
@@ -19,7 +19,7 @@
     "autoprefixer": "^9.6.1",
     "parcel-bundler": "latest",
     "parcel-plugin-inliner": "^1.0.10",
-    "sass": "^1.22.7"
+    "sass": "^1.22.10"
   },
   "postcss": {
     "modules": false,
