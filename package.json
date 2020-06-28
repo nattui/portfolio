@@ -1,24 +1,17 @@
 {
   "private": true,
   "scripts": {
-    "dev": "parcel development/index.html -d devserver/ --global index --open",
-    "build": "parcel build development/index.html -d production/ --global index --no-source-maps --public-url .",
-    "update:dependencies": "npx npm-check-updates -u && npm i",
-    "remove:dependencies": "rm -R node_modules",
+    "build": "rimraf dist/production/ && parcel build src/index.html -d dist/production/ --global index --no-source-maps --public-url .",
+    "dev": "parcel src/index.html -d dist/development/ --global index --open",
+    "package:delete": "rimraf node_modules/ && rimraf package-lock.json",
+    "package:install": "npm install",
+    "package:update": "npx npm-check-updates -u && npm install",
     "start": "npm run dev"
   },
   "devDependencies": {
-    "autoprefixer": "^9.8.4",
-    "parcel-bundler": "latest",
+    "parcel-bundler": "^1.12.4",
     "parcel-plugin-inliner": "^1.0.14",
+    "rimraf": "^3.0.2",
     "sass": "^1.26.9"
-  },
-  "postcss": {
-    "modules": false,
-    "plugins": {
-      "autoprefixer": {
-        "grid": true
-      }
-    }
   }
 }

@@ -67,5 +67,4 @@ node_modules/
 # Custom .gitignore
 # Pacel
 .cache/
-devserver/
-production/
+dist/
