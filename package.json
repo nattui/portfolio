@@ -1,26 +1,17 @@
 {
-  "name": "portfolio",
-  "version": "1.0.0",
-  "description": "🔥 Nhat Nguyen's Portfolio Website - Demonstrated front-end web development with pixel perfect CSS. Optimize for Internet Explorer and mobile too",
-  "main": "development/index.html",
+  "private": true,
   "scripts": {
     "dev": "parcel development/index.html -d devserver/ --global index --open",
     "build": "parcel build development/index.html -d production/ --global index --no-source-maps --public-url .",
     "update:dependencies": "npx npm-check-updates -u && npm i",
-    "remove:dependencies": "rm -R node_modules"
+    "remove:dependencies": "rm -R node_modules",
+    "start": "npm run dev"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nguyen-nhat/portfolio.git"
-  },
-  "keywords": [],
-  "author": "Nhat Nguyen",
-  "license": "MIT",
   "devDependencies": {
-    "autoprefixer": "^9.6.1",
+    "autoprefixer": "^9.8.4",
     "parcel-bundler": "latest",
-    "parcel-plugin-inliner": "^1.0.10",
-    "sass": "^1.22.10"
+    "parcel-plugin-inliner": "^1.0.14",
+    "sass": "^1.26.9"
   },
   "postcss": {
     "modules": false,
@@ -29,9 +20,5 @@
         "grid": true
       }
     }
-  },
-  "bugs": {
-    "url": "https://github.com/nguyen-nhat/portfolio/issues"
-  },
-  "homepage": "https://github.com/nguyen-nhat/portfolio#readme"
+  }
 }
